@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "SSAS DMWWI", "SSAS DMWWI\SSAS DMWWI.dwproj", "{9DBDAF30-1A1B-4774-9A39-0C837B5880BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DBDAF30-1A1B-4774-9A39-0C837B5880BF}.Development|Default.ActiveCfg = Development
+		{9DBDAF30-1A1B-4774-9A39-0C837B5880BF}.Development|Default.Build.0 = Development
+		{9DBDAF30-1A1B-4774-9A39-0C837B5880BF}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1407A5CD-94FF-41C2-BF31-2514D774E260}
+	EndGlobalSection
+EndGlobal

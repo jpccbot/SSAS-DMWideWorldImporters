@@ -1,0 +1,139 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5e487841-a843-40b1-be8f-9a57e82cf081" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Lugar</ID>
+  <Name>Lugar</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d7cfd508-03b4-40a2-9bca-15b58fbc284c">
+    <DataSourceViewID>DM Wide World Importers</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="262f70bd-3319-4468-b226-34b6de3d0f3e">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="54c2022c-fa2e-4c47-a029-5562967a85e7">
+      <ID>Lugar ID</ID>
+      <Name>Lugar ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2c997dcd-05fb-4b23-a3ae-1c178594e0c1">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="137451b8-50b9-4ce5-8bcd-0170b35a6689">
+            <TableID>dbo_Lugar</TableID>
+            <ColumnID>Lugar_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="8e38e411-5943-4ff5-8dd3-27874b6fdfa2">
+          <AttributeID>Lugar Pais</AttributeID>
+          <Name>Lugar Pais</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1d23f3a1-6ba3-4d1f-828b-f1e815423de4">
+          <AttributeID>Lugar Estado</AttributeID>
+          <Name>Lugar Estado</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e9e628d1-93d3-4a99-872e-3abed0f386f5">
+          <AttributeID>Lugar Ciudad</AttributeID>
+          <Name>Lugar Ciudad</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="32dd1491-a0ac-4041-a3c1-76abe18ebdf3">
+      <ID>Lugar Pais</ID>
+      <Name>Lugar Pais</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="56f0a354-fc9e-49fa-8655-1cf46095d50c">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="803baaf9-e7ec-4ccd-8aec-16de67107cd0">
+            <TableID>dbo_Lugar</TableID>
+            <ColumnID>Lugar_Pais</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2fa041f8-2df2-47ce-b86c-bec2c53f6d9b">
+      <ID>Lugar Estado</ID>
+      <Name>Lugar Estado</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="67aa91bb-4872-4ea3-a9e2-c158bbc0b80f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7ba825ea-79f6-4ae5-9f03-62e61b91686c">
+            <TableID>dbo_Lugar</TableID>
+            <ColumnID>Lugar_Estado</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="872c9f6d-cf55-4dd0-9f0e-290077ecbeb2">
+      <ID>Lugar Ciudad</ID>
+      <Name>Lugar Ciudad</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2e728303-20bb-4724-8854-8d69f5047caa">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a23eb13e-f893-4b61-9b67-26adb4773095">
+            <TableID>dbo_Lugar</TableID>
+            <ColumnID>Lugar_Ciudad</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

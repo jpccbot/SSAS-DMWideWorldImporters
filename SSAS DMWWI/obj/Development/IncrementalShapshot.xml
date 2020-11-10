@@ -1,0 +1,89 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>SSAS DMWWI</Database>
+    <Server>DESKTOP-V2PNSCM</Server>
+    <ConnectionString>Data Source=DESKTOP-V2PNSCM;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>ZDAH+VBUqprv2PI2ThMYWFqoNJQ=07/11/2020 23:21:1907/11/2020 23:21:19</TimeStamp>
+        <ID>
+          <String>DM Wide World Importers</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>FU0ucmDY3wsBZ9ei1sVjkmb8Apg=07/11/2020 23:21:3107/11/2020 23:21:30</TimeStamp>
+        <ID>
+          <String>DM Wide World Importers</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>FV/DSoJ55DRnFSnmZCsfpbr92Gs=07/11/2020 23:21:4707/11/2020 23:21:47</TimeStamp>
+        <ID>
+          <String>Cliente</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>oFSqbDa89G+QSvfv3j3gKYvmLbk=07/11/2020 23:21:5607/11/2020 23:21:56</TimeStamp>
+        <ID>
+          <String>Lugar</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>uX+MLBS8ZOVvj6mSwbTbgUykKmw=07/11/2020 23:22:1207/11/2020 23:22:12</TimeStamp>
+        <ID>
+          <String>Tiempo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>2i1HXgr5VXIAK8fYWvWNYfcZzCE=07/11/2020 23:22:4407/11/2020 23:22:44</TimeStamp>
+        <ID>
+          <String>Tipo Delivery</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>HFLN7mNI05jWvOotF7sGCpDxS+g=07/11/2020 23:22:5407/11/2020 23:22:53</TimeStamp>
+        <ID>
+          <String>Tipo Pago</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>ZflwYAsIhtkTvj/lJI2UCseLgY4=07/11/2020 23:23:1807/11/2020 23:23:17tzKvTtfPHZR4+eycY3gnDlE6Ic0=07/11/2020 23:23:1807/11/2020 23:23:17</TimeStamp>
+        <ID>
+          <String>DM Wide World Importers</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>6gu5x6dAoegZJbo5HnsQ4D5ndAc=07/11/2020 23:19:4207/11/2020 23:19:41</TimeStamp>
+      <ID>
+        <String>SSAS DMWWI</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2020-11-08T04:24:00.323333Z</LastDeployed>
+</DeploymentSnapshot>
